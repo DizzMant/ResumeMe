@@ -140,3 +140,40 @@ footer {
         transform: scale(1);
     }
 }
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
